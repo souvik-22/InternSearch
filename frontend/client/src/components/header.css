@@ -1,0 +1,28 @@
+.header-container {
+  background-color: rgb(31, 29, 29);
+  color: white;
+  font-family: cursive;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: row;
+  /* align-items: center; */
+  width: 100%;
+  margin: 0;
+  /* padding-bottom: 15px; */
+  font-size: 2rem;
+  text-align: center;
+}
+
+.icon {
+  padding: 5px;
+  margin: 2px;
+}
+
+img {
+  width: 30px;
+}
+
+.heading {
+  padding: 5px;
+  margin: 2px;
+}

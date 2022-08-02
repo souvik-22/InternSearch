@@ -1,0 +1,38 @@
+.body-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 1rem;
+    margin:auto;
+}
+
+.item{
+    width: 80%;
+    display: flex;
+    margin: 10px;
+}
+
+.label{
+    padding: 5px;
+    width: 30%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .body-container{
+        width: 100%;
+    }
+    .item{
+        width: 100%;
+    }
+    .label{
+        padding: 2px;
+        width: 40%;
+    }
+  }

@@ -1,0 +1,14 @@
+.footer-container{
+    background-color: #292a2b;
+    color: white;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 15px;
+    font-size: 1rem;
+    text-align: center;
+}
