@@ -18,7 +18,6 @@ export default class body extends Component {
   }
 
   onChange = (date, dateString) => {
-    console.log(dateString);
     this.setState({
       lastDate: dateString,
     });
@@ -50,7 +49,6 @@ export default class body extends Component {
       fetch("http://localhost:8082/jobs", requestOptions)
         .then((response) => response.text())
         .then((result) => JSON.parse(result))
-        .then((result) => console.log(result))
         .catch((error) => console.log("error", error));
     } catch (error) {
       console.log(error);
@@ -70,6 +68,7 @@ export default class body extends Component {
         link: "",
       });
       window.alert("Data Submitted Successfully!");
+      window.location.reload();
     } catch (error) {
       console.log(error);
     }
@@ -83,6 +82,7 @@ export default class body extends Component {
           <Input
             placeholder="company name"
             className="input"
+            value={this.state.companyName}
             onChange={(e) => {
               this.setState({
                 companyName: e.target.value,
@@ -95,6 +95,7 @@ export default class body extends Component {
           <Input
             placeholder="remote"
             className="input"
+            value={this.state.companyLocation}
             onChange={(e) => {
               this.setState({
                 companyLocation: e.target.value,
@@ -107,6 +108,7 @@ export default class body extends Component {
           <Input
             placeholder="cost per annum"
             className="input"
+            value={this.state.ctc}
             onChange={(e) => {
               this.setState({
                 ctc: e.target.value,
@@ -119,6 +121,7 @@ export default class body extends Component {
           <Input
             placeholder="ex:- 8 CGPA"
             className="input"
+            value={this.state.cgpa}
             onChange={(e) => {
               this.setState({
                 cgpa: e.target.value,
@@ -131,6 +134,7 @@ export default class body extends Component {
           <Input
             placeholder="Intership/Placement"
             className="input"
+            value={this.state.jobType}
             onChange={(e) => {
               this.setState({
                 jobType: e.target.value,
@@ -147,6 +151,7 @@ export default class body extends Component {
           <Input
             placeholder="Additional Information if any"
             className="input"
+            value={this.state.link}
             onChange={(e) => {
               this.setState({
                 link: e.target.value,

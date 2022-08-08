@@ -42,6 +42,7 @@ export default class body extends Component {
         {this.state.Data.map((items) => {
           return (
             <Item
+              key={items._id}
               cgpa={items.cgpa}
               companyLocation={items.companyLocation}
               companyName={items.companyName}
